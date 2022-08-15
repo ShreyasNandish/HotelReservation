@@ -1,26 +1,32 @@
 public class Hotel {
     private final String name;
-    private final int rate;
-    private int totalCost;
+    private final long weekdayRate;
+    private final long weekendRate;
+    private long totalCost;
 
-    public Hotel(String name, int rate) {
+    public Hotel(String name, long weekdayRate,long weekendRate) {
         this.name = name;
-        this.rate = rate;
+        this.weekdayRate = weekdayRate;
+        this.weekendRate = weekendRate;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getRate() {
-        return rate;
+    public long getWeekdayRate() {
+        return weekdayRate;
     }
 
-    public int getTotalCost() {
+    public long getWeekendRate() {
+        return weekendRate;
+    }
+
+    public long getTotalCost() {
         return totalCost;
     }
 
-    public void setTotalCost(int totalCost)
+    public void setTotalCost(long totalCost)
     {
         this.totalCost = totalCost;
     }
