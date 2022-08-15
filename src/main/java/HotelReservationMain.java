@@ -5,11 +5,11 @@ public class HotelReservationMain {
         Scanner scanner = new Scanner(System.in);
 
         HotelReservationService hotelReservationService = new HotelReservationService();
-        hotelReservationService.addHotel(new Hotel("Lakewood", 110));
-        hotelReservationService.addHotel(new Hotel("Bridgewood", 160));
-        hotelReservationService.addHotel(new Hotel("Ridgewood", 220));
+        hotelReservationService.addHotel(new Hotel("Lakewood", 110,90));
+        hotelReservationService.addHotel(new Hotel("Bridgewood", 150,50));
+        hotelReservationService.addHotel(new Hotel("Ridgewood", 220,150));
 
-        System.out.println("Enter check-in date: (dd-mm=yyyy) ex. 01-01-2000");
+        System.out.println("Enter check-in date: (dd-mm=yyyy) ");
         String checkInDate = scanner.nextLine();
         System.out.println("Enter check-out date: (dd-mm=yyyy)");
         String checkOutDate = scanner.nextLine();
